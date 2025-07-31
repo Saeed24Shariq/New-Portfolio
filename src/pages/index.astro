@@ -1,0 +1,383 @@
+---
+import "../../src/styles/style.css";
+import Logo from "./../Assets/Logo.svg";
+import LogoWhite from "./../Assets/LogoWhite.svg";
+import emailLogo from "./../Assets/email.png";
+import githubLogo from "./../Assets/github.png";
+import linkedinLogo from "./../Assets/linkedin.png";
+import meImg from "./../Assets/ME.png";
+import projectOne from "./../Assets/WeatherAPI.png";
+import projectTwo from "./../Assets/CurrencyApp.png";
+import htmlLogo from "./../Assets/HTML.svg";
+import cssLogo from "./../Assets/CSS.svg";
+import jsLogo from "./../Assets/JS.svg";
+import gitLogo from "./../Assets/git.svg";
+import bootstrapLogo from "./../Assets/bootstrap.svg";
+import reactLogo from "./../Assets/React.svg";
+import nextJSLogo from "./../Assets/Nextjs.svg";
+import expressJSLogo from "./../Assets/expressjs.svg";
+import mongoDBLogo from "./../Assets/mongoDB.svg";
+import nuxtJSLogo from "./../Assets/nuxtjs.svg";
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/Logo.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Shariq Saeed</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="left-con">
+				<div class="left-top">
+					<img class="logo black" src={Logo.src} alt="Logo" />
+					<img class="logo white" src={LogoWhite.src} alt="Logo" />
+					<nav>
+						<div class="navbar-control">
+							<label for="chk"><span>☰</span></label>
+							<input type="checkbox" name="chk" id="chk" />
+							<ul>
+								<li class="close">
+									<label for="chk">Close <span>✗</span></label
+									>
+								</li>
+								<li>
+									<label for="chk"
+										><a href="#about">About me</a></label
+									>
+								</li>
+								<li>
+									<label for="chk"
+										><a href="#skills">Skills</a></label
+									>
+								</li>
+								<li>
+									<label for="chk"
+										><a href="#project">Projects</a></label
+									>
+								</li>
+								<li>
+									<label for="chk"
+										><a href="#contact"
+											><button>Contact Me</button></a
+										></label
+									>
+								</li>
+							</ul>
+						</div>
+						<ul>
+							<li><a href="#about">About me</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#project">Projects</a></li>
+							<li>
+								<a href="#contact"
+									><button>Contact Me</button></a
+								>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="left-bottom">
+					<div class="intro-con">
+						<span class="intro">Hi, I am</span><br />
+						<span class="name">Shariq Saeed</span><br />
+						<span class="field">Front-end Developer</span>
+					</div>
+					<divn class="socials-con">
+						<a href="mailto:shariqggood@gmail.com" target="_blank">
+							<div class="social">
+								<img src={emailLogo.src} alt="email" />
+							</div>
+						</a>
+						<a href="https://github.com/Saeed24Shariq" target="_blank">
+							<div class="social">
+								<img src={githubLogo.src} alt="github" />
+							</div>
+						</a>
+						<a href="https://pk.linkedin.com/in/shariqsaeed24" target="_blank">
+							<div class="social">
+								<img src={linkedinLogo.src} alt="linkedin" />
+							</div>
+						</a>
+					</divn>
+				</div>
+			</div>
+			<div class="right-con">
+				<div class="right-con-in">
+					<nav>
+						<ul>
+							<li><a href="#about">About me</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#project">Projects</a></li>
+							<li>
+								<a href="#contact"
+									><button>Contact Me</button></a
+								>
+							</li>
+						</ul>
+					</nav>
+					<div class="right-bottom">
+						<img src={meImg.src} alt="ME" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr />
+		<div class="about" id="about">
+			<h1>About Me</h1>
+			<div class="intro">
+				<p>
+					I specialize in building responsive, user-friendly web
+					interfaces with a focus on clean design and efficient code.
+					Passionate about crafting seamless user experiences, I enjoy
+					turning ideas into interactive digital products.
+				</p>
+				<hr />
+			</div>
+			<div class="key-points-con">
+				<div class="top-key-points">
+					<div class="key-points">
+						<h3>DESIGN</h3>
+						<p>
+							As a Frontend Developer, design involves translating
+							UI/UX concepts into interactive, responsive, and
+							visually appealing web interfaces. It includes
+							working closely with designers to implement layouts,
+							styles, and animations using HTML, CSS, and
+							JavaScript to enhance user experience.
+						</p>
+					</div>
+					<div class="key-points">
+						<h3>DEVELOPMENT</h3>
+						<p>
+							In frontend development, deployment refers to
+							preparing and delivering the client-side code to a
+							live environment. This includes building the
+							frontend assets (e.g., using tools like Webpack or
+							Vite), optimizing performance, and hosting the
+							static files on platforms like Vercel, Netlify, or
+							traditional web servers.
+						</p>
+					</div>
+				</div>
+				<div class="bottom-key-points">
+					<div class="key-points">
+						<h3>MAINTENANCE</h3>
+						<p>
+							Frontend maintenance includes updating UI
+							components, fixing layout or responsiveness issues,
+							improving page load times, and ensuring the frontend
+							remains compatible with browser updates and evolving
+							web standards. It also involves addressing user
+							feedback and continuously enhancing the interface.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr />
+		<div class="skills" id="skills">
+			<h1>Skills</h1>
+			<div class="skills-con">
+				<div class="using-now">
+					<h3>Using Now</h3>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Tailwind</li>
+						<li>Bootstrap</li>
+						<li>Git</li>
+						<li>JavaScript</li>
+						<li>React</li>
+						<li>C++</li>
+						<li>JavaFX</li>
+					</ul>
+					<div class="skills-using-now-con">
+						<div class="skills-using-now">
+							<img src={htmlLogo.src} alt="HTML" />
+						</div>
+						<div class="skills-using-now">
+							<img src={cssLogo.src} alt="CSS" />
+						</div>
+						<div class="skills-using-now">
+							<img src={jsLogo.src} alt="JS" />
+						</div>
+						<div class="skills-using-now">
+							<img src={gitLogo.src} alt="GIT" />
+						</div>
+						<div class="skills-using-now">
+							<img src={bootstrapLogo.src} alt="Bootstrap" />
+						</div>
+						<div class="skills-using-now">
+							<img src={reactLogo.src} alt="React" />
+						</div>
+					</div>
+					<div class="mobile-using-now">
+						<div class="top-mobile-using-now">
+							<div class="skills-using-now">
+								<img src={htmlLogo.src} alt="HTML" />
+							</div>
+							<div class="skills-using-now">
+								<img src={cssLogo.src} alt="CSS" />
+							</div>
+							<div class="skills-using-now">
+								<img src={jsLogo.src} alt="JS" />
+							</div>
+							<div class="skills-using-now">
+								<img src={gitLogo.src} alt="GIT" />
+							</div>
+						</div>
+						<div class="bottom-mobile-using-now">
+							<div class="skills-using-now">
+								<img src={bootstrapLogo.src} alt="Bootstrap" />
+							</div>
+							<div class="skills-using-now">
+								<img src={reactLogo.src} alt="React" />
+							</div>
+						</div>
+					</div>
+					<div class="using-now-mobile">
+						<div class="top-using-now-mobile">
+							<div class="skills-using-now">
+								<img src={htmlLogo.src} alt="HTML" />
+							</div>
+							<div class="skills-using-now">
+								<img src={cssLogo.src} alt="CSS" />
+							</div>
+							<div class="skills-using-now">
+								<img src={jsLogo.src} alt="JS" />
+							</div>
+						</div>
+						<div class="bottom-using-now-mobile">
+							<div class="skills-using-now">
+								<img src={gitLogo.src} alt="GIT" />
+							</div>
+							<div class="skills-using-now">
+								<img src={bootstrapLogo.src} alt="Bootstrap" />
+							</div>
+							<div class="skills-using-now">
+								<img src={reactLogo.src} alt="React" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="learning">
+					<h3>Learning</h3>
+					<ul>
+						<li>Express JS</li>
+						<li>NEXT JS</li>
+						<li>Mongo DB</li>
+						<li>NUXT JS</li>
+					</ul>
+					<div class="skills-learning-con">
+						<div class="skills-learning">
+							<img src={nextJSLogo.src} alt="NEXTJS" />
+						</div>
+						<div class="skills-learning">
+							<img src={expressJSLogo.src} alt="NEXTJS" />
+						</div>
+						<div class="skills-learning">
+							<img src={mongoDBLogo.src} alt="NEXTJS" />
+						</div>
+						<div class="skills-learning">
+							<img src={nuxtJSLogo.src} alt="NEXTJS" />
+						</div>
+					</div>
+					<div class="mobile-learning">
+						<div class="skills-learning">
+							<img src={nextJSLogo.src} alt="NEXTJS" />
+						</div>
+						<div class="skills-learning">
+							<img src={expressJSLogo.src} alt="NEXTJS" />
+						</div>
+						<div class="skills-learning">
+							<img src={mongoDBLogo.src} alt="NEXTJS" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr />
+		<div class="projects-con" id="project">
+			<h1>Projects</h1>
+			<div class="project-section">
+				<div class="project">
+					<div class="left">
+						<h4>🌤️ Weather API App Description (JavaScript)</h4>
+						<span
+							>The Weather API App is a lightweight JavaScript
+							application that fetches and displays real-time
+							weather data. It provides users with current
+							temperature, weather conditions (sunny, cloudy,
+							rain, etc.), humidity, and wind speed in a clean and
+							interactive interface.</span
+						><br />
+						<a
+							href="https://github.com/Saeed24Shariq/JavaScript/tree/main/JavaScript/Weather%20Report%20with%20APIs"
+							target="_blank">Github Link....!!!</a
+						>
+					</div>
+					<div class="right">
+						<img src={projectOne.src} alt="Project Image" />
+					</div>
+				</div>
+				<hr />
+				<div class="project">
+					<div class="left">
+						<h4>🔍 Currency Abbreviation Finder App</h4>
+						<span
+							>The Currency Abbreviation to Name Finder App is a
+							simple and efficient web tool that allows users to
+							input a 3-letter currency abbreviation (ISO 4217
+							code) and instantly get the full currency name along
+							with additional details like the country and symbol.</span
+						><br />
+						<a
+							href="https://github.com/Saeed24Shariq/JavaScript/tree/main/JavaScript/Currency%20Finder"
+							target="_blank">Github Link....!!!</a
+						>
+					</div>
+					<div class="right">
+						<img src={projectTwo.src} alt="Project Image" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr />
+		<div class="contact" id="contact">
+			<h1>Contact</h1>
+			<form action="" method="GET">
+				<input
+					type="text"
+					id="name"
+					name="name"
+					placeholder="Enter Your Name"
+				/><br />
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="Enter Your Email"
+				/><br />
+				<input
+					type="text"
+					name="tel"
+					id="tel"
+					pattern="^\d+$"
+					placeholder="Phone Nummber"
+				/><br />
+				<textarea
+					name="message"
+					id="message"
+					placeholder="Place Your Message here...."></textarea><br />
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+		<footer>
+			<p><span>&copy; 2025 Shariq Saeed</span> All Rights Reserved</p>
+		</footer>
+	</body>
+</html>
